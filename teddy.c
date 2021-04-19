@@ -9,6 +9,7 @@ char buf[500][99];
 char cmd[99];
 char ecmd[99];
 
+int  elinefix = FALSE;
 int  emode = FALSE;
 int  eline = 0;
 int  lastl = 0;
@@ -22,11 +23,11 @@ void editmode() {
 			return;
 		}
 		else {
-			eline++;
 			strcpy(buf[eline],ecmd);
 			if (eline > lastl) {
 				lastl = eline;
 			}
+			eline++;
 		}
 	}
 }
