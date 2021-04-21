@@ -73,7 +73,6 @@ int main()
 			int blen = 0;
 			char fname[99];
 			
-			lastl = 0;
 			eline = 0;
 
 			printf("writeout to file: ");
